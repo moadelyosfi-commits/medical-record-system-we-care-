@@ -1,0 +1,14 @@
+name: wecare_storage
+description: In-memory mock repositories and seed data for WeCare.
+publish_to: none
+
+resolution: workspace
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  wecare_models:
+
+dev_dependencies:
+  test: ^1.25.15

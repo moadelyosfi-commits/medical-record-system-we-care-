@@ -1,0 +1,25 @@
+name: wecare_feature_home_tasks
+description: Home dashboard and tasks feature package for WeCare.
+publish_to: none
+
+resolution: workspace
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  go_router: ^14.8.1
+  intl: any
+  wecare_models:
+  wecare_ui:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  generate: true

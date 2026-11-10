@@ -1,0 +1,17 @@
+name: wecare_models
+description: Pure Dart shared domain models, interfaces and providers for WeCare.
+publish_to: none
+
+resolution: workspace
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  equatable: ^2.0.7
+  meta: ^1.16.0
+  riverpod: ^2.6.1
+  uuid: ^4.5.1
+
+dev_dependencies:
+  test: ^1.25.15

@@ -1,0 +1,13 @@
+* @ai1
+/packages/wecare_models/ @ai1
+/packages/wecare_storage/ @ai3
+/packages/wecare_ui/ @ai5
+/packages/wecare_feature_home_tasks/ @ai5
+/packages/wecare_feature_profile_settings/ @ai3
+/packages/wecare_feature_clinical_vault/ @ai4
+/apps/patient_app/ @ai1
+/apps/patient_app/test/ @ai6
+/apps/patient_app/integration_test/ @ai6
+/tool/qa/ @ai6
+/.github/workflows/apk.yml @ai6
+/docs/sprint1/QA_REPORT.md @ai6
