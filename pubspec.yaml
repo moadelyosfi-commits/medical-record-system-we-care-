@@ -1,0 +1,29 @@
+name: wecare_workspace
+publish_to: none
+
+environment:
+  sdk: ^3.11.0
+
+workspace:
+  - apps/patient_app
+  - packages/wecare_models
+  - packages/wecare_storage
+  - packages/wecare_ui
+  - packages/wecare_feature_home_tasks
+  - packages/wecare_feature_profile_settings
+  - packages/wecare_feature_clinical_vault
+
+dev_dependencies:
+  flutter_lints: ^5.0.0
+  melos: ^8.0.0
+
+melos:
+  scripts:
+    test:dart:
+      run: dart run melos exec --scope="wecare_models,wecare_storage" -c 1 -- dart test
+      description: Pure-Dart package tests
+    test:flutter:
+      run: dart run melos exec --flutter --dir-exists=test -c 1 -- flutter test
+      description: Flutter package and app tests
+    test:
+      run: dart run melos run test:dart && dart run melos run test:flutter

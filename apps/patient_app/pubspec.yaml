@@ -1,0 +1,31 @@
+name: patient_app
+description: WeCare patient mobile application (Android composition root).
+publish_to: none
+
+resolution: workspace
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_riverpod: ^2.6.1
+  go_router: ^14.8.1
+  intl: any
+  riverpod: ^2.6.1
+  wecare_feature_clinical_vault:
+  wecare_feature_home_tasks:
+  wecare_feature_profile_settings:
+  wecare_models:
+  wecare_storage:
+  wecare_ui:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
